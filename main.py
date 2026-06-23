@@ -18,7 +18,7 @@ class ModernTrackerApp(ctk.CTk):
         init_db()
         self.engine = AuditEngine()
         
-        self.title("ProTracker | Activity Auditor")
+        self.title("Evidex")
         self.geometry("1100x650")
 
         self.grid_columnconfigure(1, weight=1)
@@ -27,7 +27,7 @@ class ModernTrackerApp(ctk.CTk):
         self.sidebar = ctk.CTkFrame(self, width=240, corner_radius=0)
         self.sidebar.grid(row=0, column=0, sticky="nsew")
         
-        self.brand_lbl = ctk.CTkLabel(self.sidebar, text="PROTRACKER", font=ctk.CTkFont(size=24, weight="bold"))
+        self.brand_lbl = ctk.CTkLabel(self.sidebar, text="Evidex", font=ctk.CTkFont(size=24, weight="bold"))
         self.brand_lbl.pack(pady=(40, 40))
 
         self.btn_start = ctk.CTkButton(self.sidebar, text="Start Tracking", height=40,
